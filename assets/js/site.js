@@ -4,7 +4,7 @@
 window.SKARGARD = {
   // The shared link to the test build's zip (Google Drive, OneDrive, Dropbox, itch.io...).
   // Leave it empty and the download buttons say the link is on its way.
-  downloadUrl: "",
+  downloadUrl: "https://drive.google.com/file/d/1eM6h0cAuMgQ5By76hZKsAQ__65OojNdX/view?usp=sharing",
   downloadFile: "SkargardExpress_TestBuild_2026-10-04.zip",
   downloadSize: "5.75 GB",
   build: "Test build 0.1.0 (4 October 2026)",
