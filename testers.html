@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tester Guide · Skärgård Express</title>
+  <meta name="description" content="How to install the Skärgård Express test build, what to try, and how to report problems.">
+  <meta property="og:title" content="Skärgård Express: tester guide">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <script src="assets/js/site.js?v=2" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/favicon.png" alt=""><span class="brand-name">SKÄRGÅRD EXPRESS</span></a>
+      <nav class="nav" aria-label="Site">
+        <a href="index.html#about" class="hide-small">The game</a>
+        <a href="index.html#screenshots">Screenshots</a>
+        <a href="#install">Install</a>
+        <a href="testers.html" aria-current="page">Tester guide</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="wrap doc">
+        <span class="badge">Tester guide</span>
+        <h1 style="font-size:clamp(30px,4vw,44px);font-weight:900">Thanks for testing Skärgård Express</h1>
+        <p class="lead">This is an early build of an island courier game: you carry parcels round a small Swedish archipelago on a three-wheeled flakmoped. It's playable from start to finish, but it's rough in places, and what you notice is exactly what's needed.</p>
+        <div class="buttons" style="margin:22px 0 6px">
+          <a class="btn btn-primary" data-download><span data-label>Download the test build</span> <small data-size></small></a>
+          <a class="btn btn-ghost" data-feedback>Report a bug or send feedback</a>
+        </div>
+        <p class="meta"><span data-build></span> &middot; <span data-file></span></p>
+
+        <h2 id="install">Installing and starting it</h2>
+        <ol>
+          <li>Download the zip (about 6 GB). Google Drive may say it can't scan a file this big for viruses; choose <em>Download anyway</em>.</li>
+          <li>Unzip the whole thing somewhere with about 6 GB free, such as your Documents or a games folder (not inside Program Files). You'll get a folder called <code>SkargardExpress</code>.</li>
+          <li>Open it and run <code>SkargardExpress.exe</code>.</li>
+          <li>The game isn't signed yet, so Windows may show <em>Windows protected your PC</em>. Click <em>More info</em>, then <em>Run anyway</em>. Some antivirus programs are wary of new games too.</li>
+          <li>If it won't start at all, run <code>Engine\Extras\Redist\en-us\vc_redist.x64.exe</code> from the same folder once (it installs the Visual C++ runtime) and try again.</li>
+        </ol>
+        <div class="note">The first start takes a while, and the first minute or so of play may stutter while the graphics card prepares its shaders. It settles down, and it's quicker the next time.</div>
+        <p>The game starts full screen. <kbd>Alt</kbd>+<kbd>Enter</kbd>, <kbd>F11</kbd> or <em>Screen</em> in the menu put it in a window. Your career saves as you go; <em>New career</em> on the title screen starts over.</p>
+
+        <h2>You'll need</h2>
+        <ul>
+          <li>Windows 10 or 11, 64-bit.</li>
+          <li>A DirectX 12 graphics card: about an NVIDIA RTX 2060 or AMD RX 5700, or better, with 6 GB of video memory.</li>
+          <li>16 GB of memory.</li>
+          <li>A keyboard and mouse, or a gamepad (Xbox layout).</li>
+        </ul>
+
+        <h2>What to try</h2>
+        <p>Play however you like; this is just a list of things it would help to hear about. Tick off what you get to.</p>
+        <ul class="checklist">
+          <li><strong>The start.</strong> Play the short tutorial on the home quay, from the title screen to your first delivery. Was it clear what to do?</li>
+          <li><strong>Riding.</strong> Get a feel for the moped on asphalt, gravel, grass and mud. Try the three cameras (<kbd>C</kbd>). Does it handle the way you'd expect? Is it fun?</li>
+          <li><strong>A full day of jobs.</strong> Take jobs from the dispatch board (<kbd>Tab</kbd>), load up, deliver, and keep going until evening. Do the pay and the parcels' condition make sense?</li>
+          <li><strong>Looking after the load.</strong> Brake hard, take corners fast, and ride in the rain. Do parcels slide and spoil in a way that feels fair?</li>
+          <li><strong>The garage.</strong> Buy an upgrade in the garage at the harbour office (<kbd>G</kbd> there, or from the job list). Is the difference noticeable?</li>
+          <li><strong>Ferries.</strong> Ride the ferry to Hamno, riding the moped and on foot. Try the Cabin Pass and the charter barge once you can afford them.</li>
+          <li><strong>On foot.</strong> Get off (<kbd>F</kbd>), carry parcels by hand (<kbd>E</kbd>), visit the village shop.</li>
+          <li><strong>Side quests.</strong> Try a few from the list, such as Sixten the lost dog, the wedding cake, the runaway sheep, the moose in the road, the new flagpole or the island-hopping postie.</li>
+          <li><strong>Weather and time.</strong> Ride at dusk and at night, in rain and in snow. Can you see where you're going?</li>
+          <li><strong>The islanders.</strong> Watch them loading and taking in parcels, and listen to their voices. Does anyone sound wrong for who they are?</li>
+          <li><strong>The music.</strong> It's composed in the game. Tell us what you think.</li>
+          <li><strong>Accidents.</strong> Tip over, drive off a pier, get stuck. Can you always carry on?</li>
+        </ul>
+
+        <h2 id="report">Reporting a problem</h2>
+        <p>Use the <a data-feedback>feedback link</a> (there's a form for bugs and one for general impressions), or send a message to whoever invited you. For a bug, it helps to know:</p>
+        <ul>
+          <li>What you were doing, where (which island, near what), and what went wrong.</li>
+          <li>Whether it happens every time, and how to make it happen again.</li>
+          <li>A screenshot (<kbd>Win</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>) or a short clip (<kbd>Win</kbd>+<kbd>G</kbd> opens the Xbox Game Bar recorder).</li>
+          <li>Your graphics card, memory and Windows version (Start, type <em>dxdiag</em>, and look at the System and Display tabs).</li>
+        </ul>
+        <p>And please attach the game's log, which records what the game was doing:</p>
+        <ul>
+          <li><code>SkargardExpress\SkargardExpress\Saved\Logs\SkargardExpress.log</code> inside the folder you unzipped, or</li>
+          <li><code>%LOCALAPPDATA%\SkargardExpress\Saved\Logs\SkargardExpress.log</code> (paste that into the Explorer address bar).</li>
+        </ul>
+        <p>The log is replaced each time the game starts, so grab it straight after the problem (older ones are kept beside it with a date in the name). If the game crashes, send the newest folder under <code>Saved\Crashes</code> too. The log holds your PC's hardware details and Windows user folder name, but nothing else personal.</p>
+        <div class="note">How smooth is it? Press the <kbd>`</kbd> key (above Tab) to open the console, type <code>stat fps</code> and press Enter to show the frame rate. Type it again to hide it.</div>
+
+        <h2>Known issues</h2>
+        <p>Already on the list, so no need to report these (but do say if they spoil the game for you):</p>
+        <ul>
+          <li>The moose is sculpted rather than a proper model, and the sheep's fleece looks a bit like plaster up close.</li>
+          <li>Clothes can clip at the waist when people walk.</li>
+          <li>The courier walks over low parcels on the ground rather than nudging them along.</li>
+          <li>Granite on the coast looks flat from high up.</li>
+          <li>It's a development build, so the odd technical message may flash up on screen.</li>
+        </ul>
+
+        <h2>What's in this build</h2>
+        <p><span data-build></span>:</p>
+        <ul>
+          <li>Three islands and four skerries, with a scheduled road ferry, footbridges and a cable ferry, a Cabin Pass and a charter barge.</li>
+          <li>A campaign in four chapters, daily jobs from the dispatch board, island reputation, and garage upgrades.</li>
+          <li>36 side quests, with special loads (a flagpole, gas bottles, a cat in a carrier, a pizza stack, a buoy), herding sheep and a moose in the road.</li>
+          <li>Loose physical cargo that slides, gets knocked, soaks in the rain and spoils; parcels that come out of the sea with you are a little worse for it.</li>
+          <li>Clear weather, rain, snow, storms, autumn leaves, and day and night, through the seasons.</li>
+          <li>Islanders who load and take in parcels by hand, visitors out walking and cycling, natural voices, and music composed in the game.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>Created by Paul Bardell &middot; Cobolt60 Studios 2026</span>
+      <span><a href="index.html">Home</a> &middot; <a data-feedback>Feedback</a></span>
+    </div>
+  </footer>
+</body>
+</html>

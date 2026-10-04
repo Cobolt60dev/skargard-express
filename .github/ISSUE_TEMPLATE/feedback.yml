@@ -1,0 +1,56 @@
+name: Feedback
+description: How the game played for you: what was fun, what wasn't.
+title: "[Feedback] "
+labels: ["feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: Honest is best. There are no wrong answers, and short answers are fine.
+  - type: dropdown
+    id: fun
+    attributes:
+      label: How much did you enjoy it?
+      options:
+        - "5: loved it"
+        - "4: liked it"
+        - "3: it was all right"
+        - "2: not really"
+        - "1: not for me"
+    validations:
+      required: true
+  - type: input
+    id: time
+    attributes:
+      label: How long did you play?
+      placeholder: "About two hours, over two evenings"
+  - type: textarea
+    id: liked
+    attributes:
+      label: What did you like?
+  - type: textarea
+    id: frustrating
+    attributes:
+      label: What was frustrating or confusing?
+  - type: dropdown
+    id: controls
+    attributes:
+      label: What did you play with?
+      options:
+        - Keyboard and mouse
+        - Gamepad
+        - Both
+  - type: textarea
+    id: handling
+    attributes:
+      label: How did the moped feel to ride?
+      description: Too slippery, too twitchy, too slow, just right?
+  - type: textarea
+    id: performance
+    attributes:
+      label: How smoothly did it run?
+      description: The frame rate if you checked it (` then stat fps), any stutters, and your graphics card.
+  - type: textarea
+    id: more
+    attributes:
+      label: Anything else?
+      description: Ideas, favourite moments, what you'd want next.

@@ -1,0 +1,62 @@
+name: Bug report
+description: Something went wrong in the test build.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time! The more we know, the quicker it gets fixed. Attach the game's log if you can:
+        `SkargardExpress\SkargardExpress\Saved\Logs\SkargardExpress.log` in the folder you unzipped
+        (or `%LOCALAPPDATA%\SkargardExpress\Saved\Logs\SkargardExpress.log`).
+  - type: input
+    id: build
+    attributes:
+      label: Build
+      description: Which test build (it's in the zip's name).
+      value: "Test build 0.1.0 (4 October 2026)"
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What went wrong, and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we make it happen?
+      description: What you were doing just before, step by step if you can.
+      placeholder: |
+        1. Took the morning post job from the board
+        2. Rode onto the ferry and got off
+        3. ...
+  - type: input
+    id: where
+    attributes:
+      label: Where in the game?
+      description: Which island, near what, and which job or quest you were on.
+      placeholder: "Hamno, by the boatyard, on the Mended nets job"
+  - type: dropdown
+    id: often
+    attributes:
+      label: How often?
+      options:
+        - Every time
+        - Sometimes
+        - Once so far
+    validations:
+      required: true
+  - type: input
+    id: pc
+    attributes:
+      label: Your PC
+      description: Graphics card, memory and Windows version (Start, type dxdiag).
+      placeholder: "RTX 3060, 16 GB, Windows 11"
+  - type: textarea
+    id: files
+    attributes:
+      label: Log, screenshots or a clip
+      description: Drag the log file and any pictures or videos in here.
